@@ -53,7 +53,15 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 ## Quickstart
 
-Welcome to the quickstart guide
+* Make a fork of this repository
+
+* Clone your forks repository to your local machine
+
+* Move into your local `charity-auction-client` directory
+
+* Install NPM dependencies
+
+* Start the front end development server
 
 ## Updating to New Releases
 
