@@ -1,51 +1,15 @@
-#OSX
-.DS_Store
-.AppleDouble
-.LSOverride
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# SublimeText
-# cache files for sublime text
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
+# dependencies
+node_modules
 
-# workspace files are user-specific
-*.sublime-workspace
+# testing
+coverage
 
-# Pycharm
-.idea
-
-# Vim
-*~
-*.swp
-*.swo
-
-# npm
-node_modules/
-
-# virtual environments
-.env
-
-{% if cookiecutter.db_engine == "sqlite" -%}
-# sqlite3
-/home/vagrant/{{cookiecutter.repo_name}}/db.sqlite3
-{% endif %}
-
-# python
-*.py[cod]
-*.pyc
-__pycache__
-
-# static files
+# production
 build
 
-# virtual environments
-/.vagrant
-
-# secret files
-env.client.json
-env.server.json
-
-# server logs
-server/logs/*
-
+# misc
+.DS_Store
+.env
+npm-debug.log
