@@ -18,3 +18,7 @@ npm-debug.log
 *.py[cod]
 *.pyc
 __pycache__
+
+
+# pycharm project
+.idea/
