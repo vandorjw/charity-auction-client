@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import $ from 'jquery';
 
 class App extends Component {
   constructor(props) {
@@ -16,18 +15,6 @@ class App extends Component {
       data: ""
     }
 }
-    
- componentDidMount() {
-    //this.props = fetch('/items/list/');
-   $.get('/items/list/', function (result) {
-      this.setState({
-        data: result
-      });
-    }.bind(this));
-  }
-
-  
-
   render() {
     console.log(this.state);
     let {

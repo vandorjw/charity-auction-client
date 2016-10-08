@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './Login.css';
-import $ from 'jquery';
 
 class Login extends Component {
 
@@ -11,8 +10,6 @@ class Login extends Component {
         <section className="login-wrapper">
           <div className="logo-title">
             {/* logo image goes here */}
-          </div>
-          <div className="skew-container">
           </div>
           <div className="sign-in-container">
           <span className="inputs email">
