@@ -68,3 +68,7 @@
 	min-height: 45px;
 	font-size: 18px;
 }
+.sign-in-container .submit-button input:hover {
+	background-color: #263238;
+	transition: background-color .3s;
+}

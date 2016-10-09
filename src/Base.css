@@ -22,9 +22,9 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	line-height: 100%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -33,14 +33,15 @@ footer, header, hgroup, menu, nav, section {
 }
 body,
 html {
-	line-height: 1;
 	width: 100%;
+	background-repeat: no-repeat;
 }
 body {
 	background-color: #f2f2f2;
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #273238;
 	font-size: 20px;
+	font-weight: 300;
 }
 ol, ul {
 	list-style: none;
@@ -56,4 +57,7 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+a {
+	text-decoration: none;
 }

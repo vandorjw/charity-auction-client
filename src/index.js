@@ -8,7 +8,7 @@ import './Base.css';
 
 ReactDOM.render((
   <Router history={hashHistory}>
-    <Route path="/" component={Listing}/>
+    <Route path="/listing" component={Listing}/>
     <Route path="/login" component={Login}/>
   </Router>
 ), document.getElementById('root'))
