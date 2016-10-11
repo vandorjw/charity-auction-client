@@ -1,11 +1,15 @@
 /* HEADER */
 
 /* listing menu */
-.listing-wrapper .main-menu {
+.main-menu {
 	position: absolute;
 	width: 100%;
 	z-index: 10;
 }
+.item-wrapper .main-menu {
+	background-image: url('/img/blue-filter.png');
+}
+
 .main-menu {
 	width: 100%;
 	display: flex;
