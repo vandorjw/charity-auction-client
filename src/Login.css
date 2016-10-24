@@ -1,0 +1,74 @@
+/* LOGIN */
+
+.wrapper {
+	width: 100%;
+	padding-top: 178px;
+	padding-top: 22.25vh;
+}
+.login-wrapper {
+	min-width: 330px;
+	width: 38.28%;
+	background-color: #FAFAFA;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+	min-height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 2px 4px rgba(91, 102, 105, 0.3);
+	background-image: url('/img/login-angle.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.logo-title {
+	width: 130px;
+	min-height: 70px;
+	margin-top: -35px;
+	background-color: #050d9e;
+	transform: skewX(-20deg);
+	box-shadow: 0px 2px 4px rgba(91, 102, 105, 0.3);
+}
+.sign-in-container {
+	width: 66.1%;
+	padding-top: 135px;
+	padding-top: 16.8vh;
+	padding-bottom: 50px;
+	padding-bottom: 6.2vh;
+}
+.sign-in-container span {
+	display: block;
+}
+.sign-in-container .inputs {
+	border-bottom: 2px dotted #c5d1d4;
+	width: 100%;
+	padding-bottom: 6px;
+}
+.sign-in-container .inputs input {
+	width: 100%;
+	background-color: transparent;
+	border: 0px;
+	font-size: 20px;
+}
+.sign-in-container .inputs.password {
+	padding-top: 60px;
+}
+.sign-in-container .submit-button {
+	display: block;
+	text-align: center;
+	padding-top: 95px;
+	padding-top: 11.8vh;
+}
+.sign-in-container .submit-button input {
+	color: #FFFFFF;
+	background-color: #050d9e;
+	border-radius: 2px;
+	border: 0px;
+	min-width: 150px;
+	min-height: 45px;
+	font-size: 18px;
+}
+.sign-in-container .submit-button input:hover {
+	background-color: #263238;
+	transition: background-color .3s;
+}

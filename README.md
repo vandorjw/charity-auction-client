@@ -5,6 +5,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 ## Table of Contents
 
+- [Quickstart](#quickstart)
 - [Updating to New Releases](#updating-to-new-releases)
 - [Sending Feedback](#sending-feedback)
 - [Folder Structure](#folder-structure)
@@ -49,6 +50,18 @@ You can find the most recent version of this guide [here](https://github.com/fac
   - [Now](#now)
   - [Surge](#surge)
 - [Something Missing?](#something-missing)
+
+## Quickstart
+
+* Make a fork of this repository
+
+* Clone your forks repository to your local machine
+
+* Move into your local `charity-auction-client` directory
+
+* Install NPM dependencies
+
+* Start the front end development server
 
 ## Updating to New Releases
 
