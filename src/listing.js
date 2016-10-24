@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './Listing.css';
-import Header from './Header.js';
+import './listing.css';
+import Header from './header.js';
 
 class Listing extends Component {
+
   constructor(props) {
     super(props)
     this.state = {
@@ -16,24 +17,25 @@ class Listing extends Component {
       data: ""
     }
   }
+
   componentDidMount() {
     fetch('/items/list/')
       .then((response) => response.json()) 
       .then((jsonData) => {
-
         this.setState({
           data: jsonData,
           isLoading: false,
         })
       })
   }
+
   render() {      
     if (this.state.isLoading) {
       return (
         <div>I am loading</div>
       )
-      
     }
+
     return (
       <div className="listing-wrapper">
         <Header />
@@ -46,8 +48,11 @@ class Listing extends Component {
         </div>
       </div>
     );
+
   }
+
   _renderList(dataSource) {
+
     return (
       dataSource.map((item, key) => {
         var backgroundImage = {

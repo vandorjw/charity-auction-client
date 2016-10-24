@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory } from 'react-router';
-import Listing from './Listing';
-import Login from './Login';
-import Item from './Item';
-import './Base.css';
+import Listing from './listing.js';
+import Login from './login.js';
+import Item from './item.js';
+import './base.css';
 
 
 ReactDOM.render((

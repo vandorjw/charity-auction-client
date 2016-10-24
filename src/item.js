@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './Item.css';
-import Header from './Header.js';
+import './item.css';
+import Header from './header.js';
 
 class Item extends Component {
+
   constructor(props) {
     super(props)
     this.state = {
@@ -17,11 +18,13 @@ class Item extends Component {
     this._overlay = this._overlay.bind(this);
     this._cancelBid = this._cancelBid.bind(this);
   }
+
   componentWillMount() {
     return {
       data: "",
     }
   }
+
   componentDidMount() {
     fetch('/items/list/')
       .then((response) => response.json()) 
@@ -32,31 +35,36 @@ class Item extends Component {
           isLoading: false,
         })
       })
-
       window.addEventListener('resize', () => this._onResize());
   }
+
   createMarkup(html) {
     return {__html: html};
   }
+
   _handleChange(event) {
     this.setState({
       bidInput: event.target.value
     });
   }
+
   _overlay() {
     this.setState({
       overlay: true
     })
   }
+
   _cancelBid() {
     this.setState({
       overlay: false
     })
   }
+
   _onResize() {
       this.setState({
         didInvalidate: true });
   }
+
   _overlayCover(el){
     if(el && this.state.didInvalidate) {
       this.setState({
@@ -73,19 +81,24 @@ class Item extends Component {
       )
       
     }
+
     var backgroundImage = {
       backgroundImage: 'url(' + this.state.data[0].image + ')'
     }
+
     var overlayStyle = {
       height: this.state.overlayHeight
     }
+
     var overlayTop = {
       top: (document.body.scrollTop) + (window.innerHeight * .1)
     }
+
     var valueLink = {
       value: this.state.bidInput,
       requestChange: this._handleChange
     }
+
     return (
       <div className="item-wrapper" ref={this._overlayCover.bind(this)}>
         <Header />
@@ -137,6 +150,7 @@ class Item extends Component {
       </div>
     );
   }
+
 }
 
 export default Item;

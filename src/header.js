@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './Header.css';
+import './header.css';
 
 class Header extends Component {
+
   render() {
     return (
       <div className="main-menu">
@@ -22,6 +23,7 @@ class Header extends Component {
       </div>
     );
   }
+
 }
 
 export default Header;

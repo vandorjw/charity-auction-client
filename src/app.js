@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './app.css';
 
 class App extends Component {
+
   constructor(props) {
     super(props)
     this.state = {
@@ -25,8 +26,6 @@ class App extends Component {
     }.bind(this));
   }
 
-  
-
   render() {
     console.log(this.state);
     let {
@@ -46,16 +45,6 @@ class App extends Component {
       </div>
     );
   }
-}
-class Hello extends Component {
-  render() {
-    return(
-      <div>
-        <h2>gasfasdsdasddfa</h2>
-      </div>
-    )
-  }
-
 }
 
 export default App;
