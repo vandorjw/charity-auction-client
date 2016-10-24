@@ -1,0 +1,179 @@
+/* INDIVIDUAL BID ITEM */
+.item-wrapper {
+	position: relative;
+	width: 100%;
+}
+.item-wrapper .hero-image-wrapper {
+	width: 100%;
+	position: relative;
+	min-height: 570px;
+	display: flex;
+	align-items: stretch;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.item-wrapper .text-container {
+	width: 100%;
+	background-image: url('/img/dark-filter.png');
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+    padding-left: 3.12%;
+    padding-right: 3.12%;
+}
+.item-wrapper .text-container * {
+	color: #ffffff;
+}
+.item-wrapper .text-container h1 {
+	font-size: 40px;
+	font-weight: 400;
+	padding-bottom: 320px;
+}
+.item-wrapper .overlay-container {
+	display: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background-image: url('/img/light-filter.png');
+	z-index: 11;
+}
+.item-wrapper .overlay-container.active {
+	display: block;
+}
+
+.item-wrapper .overlay-inside {
+	position: absolute;
+	width: 71.5%;
+	background-color: #FFFFFF;
+	box-shadow: 0px 2px 4px rgba(91, 102, 105, 0.3);
+	left: 14.251%;
+	top: 5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	opacity: 0;
+}
+.item-wrapper .overlay-container.active .overlay-inside {
+	opacity: 1;
+	transition: opacity 10s;
+}
+.item-wrapper .overlay-inside > span {
+	font-size: 36px;
+	text-align: center;
+	padding-top: 60px;
+}
+.item-wrapper .overlay-inside > span > span {
+	font-weight: 400;
+}
+.overlay-inside {
+	padding: 30px;
+	padding-bottom: 80px;
+}
+.overlay-inside .cancel-container {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.overlay-inside .cancel {
+	width: 30px;
+	height: 30px;
+	background-image: url('/img/cancel.png');
+	background-size: cover;
+	cursor: pointer;
+}
+.bid-wrapper {
+	width: 100%;
+	padding-bottom: 80px;
+}
+.bid-wrapper .shadow-container {
+	box-shadow: 0px 2px 4px rgba(91, 102, 105, 0.3);
+	width: 81.5%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 46px;
+	padding-bottom: 100px;
+	padding-left: 12%;
+	padding-right: 12%;
+	margin-top: -200px;
+	background-color: #FFFFFF;
+	position:relative;
+}
+.bid-wrapper .bid-details-top {
+	text-align: center;
+	background-color: #FFFFFF;
+	padding-bottom: 60px;
+}
+.bid-wrapper .bid-details-top h2 {
+	font-size: 38px;
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+.bid-wrapper .html-insert,
+.bid-wrapper .html-insert * {
+	line-height: 150%;
+}
+.bid-wrapper .html-insert {
+	padding-bottom: 40px;
+}
+.bid-wrapper .form-container {
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.bid-wrapper .retail-value {
+	font-size: 24px;
+	padding-bottom: 20px;
+}
+.bid-wrapper .bid-input {
+	border: 1px solid #c5d1d4;
+	border-radius: 2px;
+	padding: 15px;
+	display: block;
+}
+.bid-wrapper .bid-input input {
+	width: 100%;
+	background-color: transparent;
+	border: 0px;
+	font-size: 24px;
+}
+.bid-wrapper .submit-button,
+.overlay-container .submit-button {
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+	width: 100%;
+	cursor: pointer;
+}
+.bid-wrapper .submit-button,
+.overlay-container .submit-button {
+	color: #FFFFFF;
+	background-color: #050d9e;
+	border-radius: 2px;
+	border: 0px;
+	min-width: 150px;
+	min-height: 80px;
+	font-size: 30px;
+	font-weight: 300;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.overlay-container .submit-button {
+	width: 61%;
+}
+.bid-wrapper .submit-button:hover,
+.overlay-container .submit-button:hover {
+	background-color: #263238;
+	transition: background-color .3s;
+}
+
+@media(min-width: 600px) {
+	.item-wrapper .text-container h1 {
+		font-size: 80px;
+	}
+	.bid-wrapper .shadow-container {
+		width: 71.5%;
+	}
+}
